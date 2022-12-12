@@ -1,0 +1,8 @@
+total=2930
+cantidad1=10
+cantidad2=5
+cantidad3=5
+cantidad4=5
+cantidad5=5
+cantidad6=5
+cantidad7=5

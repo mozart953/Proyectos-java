@@ -1,0 +1,7 @@
+nombre=probando
+tarjeta=6666666666666666
+pin=1111
+monto=120
+saldo=0
+retiro=0
+deposito=0

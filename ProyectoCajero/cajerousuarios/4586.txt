@@ -1,0 +1,7 @@
+nombre=jdf
+tarjeta=4444555588886666
+pin=4586
+monto=100
+saldo=0
+retiro=0
+deposito=0

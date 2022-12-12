@@ -1,0 +1,4 @@
+nombre=juan
+apellido=perez
+pin=4545
+clave=012345

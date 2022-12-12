@@ -1,0 +1,7 @@
+nombre=usuario11
+tarjeta=1234567891123456
+pin=2225
+monto=555
+saldo=1245
+retiro=755
+deposito=2000

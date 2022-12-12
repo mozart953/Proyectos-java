@@ -1,0 +1,4 @@
+nombre=nasa1
+apellido=spacio
+pin=1729
+clave=31421

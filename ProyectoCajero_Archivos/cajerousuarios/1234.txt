@@ -1,0 +1,4 @@
+nombre=nadie
+tarjeta=1234567891123456
+pin=1234
+monto=12

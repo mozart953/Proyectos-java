@@ -1,0 +1,4 @@
+nombre=prueba1
+apellido=pr
+pin=8
+clave=66

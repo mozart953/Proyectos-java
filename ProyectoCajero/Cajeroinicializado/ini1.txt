@@ -1,0 +1,8 @@
+total=28264
+cantidad1=120
+cantidad2=22
+cantidad3=24
+cantidad4=24
+cantidad5=24
+cantidad6=24
+cantidad7=24

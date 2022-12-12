@@ -1,0 +1,7 @@
+nombre=marcos
+tarjeta=5555555555555555
+pin=7777
+monto=100
+saldo=100
+retiro=0
+deposito=100

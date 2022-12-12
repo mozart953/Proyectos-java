@@ -1,0 +1,1 @@
+document.write('<script src=\'https://www.googletagservices.com/tag/js/gpt.js\'>\r\n  googletag.pubads().definePassback(\'/65327593/Passback/Exponential_Academia_300x250\', [300, 250]).display();\r\n<\/script>');

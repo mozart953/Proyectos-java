@@ -1,0 +1,8 @@
+total=0
+cantidad1=0
+cantidad2=0
+cantidad3=0
+cantidad4=0
+cantidad5=0
+cantidad6=0
+cantidad7=0

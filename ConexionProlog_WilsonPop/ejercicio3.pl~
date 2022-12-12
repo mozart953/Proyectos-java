@@ -1,0 +1,14 @@
+progenitor(pedro,teresa).
+progenitor(maria,teresa).
+progenitor(maria,elena).
+progenitor(teresa,jorge).
+progenitor(teresa,raquel).
+progenitor(raquel,miguel).
+
+hombre(pedro).
+mujer(maria).
+mujer(elena).
+mujer(teresa).
+hombre(jorge).
+mujer(raquel).
+hombre(miguel).

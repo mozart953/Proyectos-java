@@ -1,0 +1,7 @@
+nombre=usu1
+tarjeta=4444444444444444
+pin=0000
+monto=24
+saldo=83
+retiro=17
+deposito=100
