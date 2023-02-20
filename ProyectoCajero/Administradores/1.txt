@@ -1,4 +1,4 @@
 nombre=admin
 apellido=admin1
 pin=1
-clave=123
+clave=1234
