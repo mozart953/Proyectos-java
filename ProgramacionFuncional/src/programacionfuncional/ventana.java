@@ -10,7 +10,7 @@ package programacionfuncional;
  * @author Wilson Pop
  */
 public class ventana extends javax.swing.JFrame {
-
+     int valor3 = 3;
     /**
      * Creates new form ventana
      */
@@ -95,6 +95,8 @@ public class ventana extends javax.swing.JFrame {
         valor = String.valueOf(operation.CalcularPromedio(a, b));
         
         campo.setText(valor);
+        
+        valor3=4;
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

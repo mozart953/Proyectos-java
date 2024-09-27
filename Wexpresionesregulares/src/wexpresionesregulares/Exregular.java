@@ -18,7 +18,10 @@ public class Exregular extends javax.swing.JFrame {
      */
     public Exregular() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
+    
+    String patron="";
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -41,6 +44,8 @@ public class Exregular extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         coin1 = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,7 +80,7 @@ public class Exregular extends javax.swing.JFrame {
         vl1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         jLabel3.setFont(new java.awt.Font("Swis721 LtCn BT", 3, 11)); // NOI18N
-        jLabel3.setText("Wilson Victor Alexander Pop Cac -201840972");
+        jLabel3.setText("Wilson Victor Alexander Pop Cac -201840972 -Examen privado - ciencias de la computacion");
 
         jLabel5.setFont(new java.awt.Font("Sitka Text", 3, 11)); // NOI18N
         jLabel5.setText("Posiciones de las coincidencias:");
@@ -89,6 +94,20 @@ public class Exregular extends javax.swing.JFrame {
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setText("Números binarios");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jButton4.setText("Valor Numerico");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
             }
         });
 
@@ -119,12 +138,16 @@ public class Exregular extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGap(68, 68, 68)
-                                .addComponent(jLabel1))
+                                .addComponent(jLabel1)
+                                .addGap(161, 161, 161)
+                                .addComponent(jButton3)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton4))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(14, Short.MAX_VALUE))
+                        .addContainerGap(20, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(61, 61, 61)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -137,23 +160,26 @@ public class Exregular extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(9, 9, 9)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton3))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(in1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(5, 5, 5))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel5)
                         .addGap(15, 15, 15)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jScrollPane2)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 32, Short.MAX_VALUE)
@@ -173,8 +199,13 @@ public class Exregular extends javax.swing.JFrame {
     }//GEN-LAST:event_in1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+              
+        
         String ent = this.in1.getText();
         String ent2 = this.in2.getText();
+        
+              
         
             Pattern pat = Pattern.compile(ent);
             Matcher ev = pat.matcher(ent2);
@@ -218,6 +249,120 @@ public class Exregular extends javax.swing.JFrame {
         coin1.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        patron = "(0|1)+";
+        
+        String ent = patron;
+        this.in1.setText(patron);
+        String ent2 = this.in2.getText();
+        
+              
+        
+            Pattern pat = Pattern.compile(ent);
+            Matcher ev = pat.matcher(ent2);
+            boolean coin = ev.find();
+            String am = ev.replaceAll("_");
+            String ac = "";
+            String ac2 = "";
+            int cont = 0;
+            //Puede servir
+            /*System.out.println(ev.matches()); 
+            System.out.println(ev.lookingAt());
+             while(ev.find()){
+                    cont ++;
+                     ac += "Coincidencia No.  " + cont + " Desde posición " + ev.start() + " hasta posición " + ev.end() + "\n";
+                }
+            */
+             ev.reset();
+             while(ev.find()){
+                 cont++;
+                 ac += ev.group()+" = Coincidencia No.  " + cont + " Desde posición " + ev.start() + " hasta posición " + (ev.end()-1) + "\n";
+             }
+             
+             
+            if(coin==true){             
+                
+                vl1.setText("Existen coincidencias.");
+                in2.setText(ent2+"\n"+am);
+                coin1.setText(ac);
+                                                
+            }else{
+                vl1.setText("No existen coincidencias.");
+                
+            }
+            
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        patron = "(-)?[0-9]{2}";
+        
+        String ent = patron;
+        this.in1.setText(patron);
+        String ent2 = this.in2.getText();
+        
+            int suma = 0;
+            int resta =0;
+            String acumulador[] = new String[patron.length()];
+            String acumulador2[] = new String[patron.length()];
+            int contador =0;
+            Pattern pat = Pattern.compile(ent);
+            Matcher ev = pat.matcher(ent2);
+            boolean coin = ev.find();
+            String am = ev.replaceAll("_");
+            String ac = "";
+            String ac2 = "";
+            int cont = 0;
+            //Puede servir
+            /*System.out.println(ev.matches()); 
+            System.out.println(ev.lookingAt());
+             while(ev.find()){
+                    cont ++;
+                     ac += "Coincidencia No.  " + cont + " Desde posición " + ev.start() + " hasta posición " + ev.end() + "\n";
+                }
+            */
+             ev.reset();
+             
+           
+             
+             while(ev.find()){
+                 acumulador[cont]=ev.group();
+                 acumulador2[cont]=ev.group();
+                 cont++;
+                 ac += ev.group()+" = Coincidencia No.  " + cont + " Desde posición " + ev.start() + " hasta posición " + (ev.end()-1) + "\n";
+                 
+             }
+             
+             for(int i=0;i<ent2.length();i++){
+                 System.out.println("--");
+                 if(acumulador2[i+1].equals(null)){
+                     JOptionPane.showMessageDialog(rootPane, "---");
+                 }
+                 else if(acumulador2[i+1]!=null){
+                     if(acumulador[i].equals(acumulador2[i+1])){
+                         ac+="\n"+ acumulador[i]+ " y" +acumulador2[i+1]+ " son iguales" +" su suma es: "+
+                                 String.valueOf(Integer.parseInt(acumulador[i] + acumulador2[i])) + " su resta es: " + "- " +String.valueOf(Integer.parseInt(acumulador[i] + acumulador2[i]));
+                     }else{
+                           ac+="\n"+ acumulador[i]+ " y" +acumulador2[i+1]+ " son diferentes" +" su suma es: "+
+                                 String.valueOf(Integer.parseInt(acumulador[i] + acumulador2[i])) + " su resta es: " + "- " +String.valueOf(Integer.parseInt(acumulador[i] + acumulador2[i]));
+                     }
+                 }
+             
+             }
+            
+             
+             
+            if(coin==true){             
+                
+                vl1.setText("Existen coincidencias.");
+                in2.setText(ent2+"\n"+am);
+                coin1.setText(ac);
+                                                
+            }else{
+                vl1.setText("No existen coincidencias.");
+                
+            }
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -259,6 +404,8 @@ public class Exregular extends javax.swing.JFrame {
     private javax.swing.JTextArea in2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
